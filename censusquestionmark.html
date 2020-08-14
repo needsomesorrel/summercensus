@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IYE Summer</title>
+	<style type="text/css">
+		body {
+			font-family: 'Century Gothic','Futura','Didact Gothic',sans-serif; /* will change font... */
+			position: absolute;
+			background-image: url(https://www.behindthescenesnyc.com/wp-content/uploads/2017/09/Curiosities-Top-Picks-10-Place-to-Eat-Crown-Heights-by-Shalom-Serraf-1.png);
+			background-size: cover;
+			background-attachment: fixed;
+			height: 100%;
+			width: 100%;
+			z-index: 0;
+			max-width: 100%;
+    		overflow-x: hidden;
+    		margin: 0 auto;
+	    }
+
+ 		#artsy {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			/*background-color: rgba(31,82,163,0.8);*/
+			background-image: linear-gradient(180deg, rgba(31,82,163,0.7), rgba(31,82,163,1));
+			background-size: cover;
+			z-index: 1;
+		}
+
+		nav {
+			position: fixed;
+			right: 0px;
+			top: 0px;
+			width: 100%;
+			height: 32px;
+			background-color: #e86926;
+			overflow: hidden;
+			padding-right: -30px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			z-index: 2;
+/*			box-shadow: 1px 10px 12px #1f52a3*/
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		nav a {
+			display: block;
+			float: left;
+			width: 95px;
+			text-align: center;
+			font-size: 17px;    
+			color: white;
+/*			border: 1px solid #000;*/ 
+			padding-top: 10px;    
+			padding-right: 10px;    
+			padding-bottom: 10px;    
+			padding-left: 10px;
+			margin-top: -2px;
+			text-decoration: none;
+			transition-duration: 0.2s;
+		}
+		nav a:hover {
+			background-color: #deae2a;
+			transition-duration: 0.2s;
+			color: #16a2c9;
+/*			text-decoration: underline;
+			text-decoration-color: #db3b30;*/
+
+		}
+		#logo {
+			padding-left: 10px; 
+			padding-bottom: 50px; 
+/*			padding-right: 40px;*/  
+			margin-right: 20px;
+			margin-left: 20px;  
+			margin-top: -15px;
+/*			font-family: 'Hind', sans-serif;  */
+/*			font-size: 30px;*/  
+/*			letter-spacing: -1px;*/  
+			width: auto;
+			max-height: 5px;
+			text-shadow: 1px 1px 2px #c4c4c4;
+		}
+
+		#what {
+			position: absolute;
+			top: 120px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#who {
+			position: absolute;
+			top: 500px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#why {
+			position: absolute;
+			top: 880px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#how {
+			position: absolute;
+			top: 1260px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#question {
+			color: #1375e6;
+			font-weight: bold;
+		}
+
+		#info {
+			color: #03162b;
+			font-size: 16px;
+			font-weight: normal;
+			position: absolute;
+			top: 66px;
+			overflow: scroll;
+		}
+
+		#paperz, #skool, #boro, #fourmi {
+			height: 330px;
+			width: 330px;
+			overflow: hidden;
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="artsy"></div>
+
+	<nav>
+		<a id="logo" href="ifetayo.org"> <img width="120px" height="42px" src="https://www.cb14youthconference.nyc/wp-content/uploads/2020/02/0BF00CF2-B582-4E9D-9C6E-7D51FF3E30B5.png"> </a>
+		<a href="ten.html"> HOME </a>
+		<a href="aboutus.html"> ABOUT </a>
+		<a href="censusquestionmark.html"> CENSUS </a>
+		<a href="#"> PROJECTS </a>
+	</nav>
+
+	<div id="what"> 
+		<h1 id="question"> WHAT IS THE CENSUS?! </h1>
+		<img id="paperz" src="https://pyxis.nymag.com/v1/imgs/5a9/26d/7a2991c1e2b3c20f6e8ce8041a873cbb85-census.rsquare.w1200.jpg">
+		<h3 id="info"> fill it out </h3>
+	</div>
+		<div id="who"> 
+		<h1 id="question"> WHY DOES IT MATTER? </h1>
+		<img id="boro" src="https://media.timeout.com/images/101830363/image.jpg">
+		<h3 id="info"> fill it out pls, i'm tellin u </h3>
+	</div>
+
+	<div id="why"> 
+		<h1 id="question"> WHAT DOES IT FUND? </h1>
+		<img id="skool" src="https://cdn.brownstoner.com/wp-content/uploads/2015/03/ps-321-school-park-slope-031615.jpg">
+		<h3 id="info"> it's for a GOOD REASON </h3>
+	</div>
+
+	<div id="how"> 
+		<h1 id="question"> SO... WHAT CAN I DO? </h1>
+		<img id="fourmi" src="https://www1.nyc.gov/assets/home/images/programs/NYCcensus.jpg">
+		<h3 id="info"> girl... chile... listen. </h3>
+	</div>
+
+</body>
+</html>

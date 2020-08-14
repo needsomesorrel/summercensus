@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IYE Summer</title>
+	<style type="text/css">
+		body {
+			font-family: 'Century Gothic','Futura','Didact Gothic',sans-serif; /* will change font... */
+			position: absolute;
+			background-image: url(https://s3.amazonaws.com/nooklyn-pro/xwide/195846/NOOK_NostrandAve2022-2A_092617-25.jpg?1560283385);
+			background-size: cover;
+			background-attachment: fixed;
+			height: 100%;
+			width: 100%;
+			z-index: 0;
+			max-width: 100%;
+    		overflow-x: hidden;
+    		margin: 0 auto;
+	    }
+
+ 		#artsy {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			/*background-color: rgba(31,82,163,0.8);*/
+			background-image: linear-gradient(180deg, rgba(31,82,163,0.7), rgba(31,82,163,1));
+			background-size: cover;
+			z-index: 1;
+		}
+
+		nav {
+			position: fixed;
+			right: 0px;
+			top: 0px;
+			width: 100%;
+			height: 32px;
+			background-color: #e86926;
+			overflow: hidden;
+			padding-right: -30px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			z-index: 2;
+/*			box-shadow: 1px 10px 12px #1f52a3*/
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		nav a {
+			display: block;
+			float: left;
+			width: 95px;
+			text-align: center;
+			font-size: 17px;    
+			color: white;
+/*			border: 1px solid #000;*/ 
+			padding-top: 10px;    
+			padding-right: 10px;    
+			padding-bottom: 10px;    
+			padding-left: 10px;
+			margin-top: -2px;
+			text-decoration: none;
+			transition-duration: 0.2s;
+		}
+		nav a:hover {
+			background-color: #deae2a;
+			transition-duration: 0.2s;
+			color: #16a2c9;
+/*			text-decoration: underline;
+			text-decoration-color: #db3b30;*/
+
+		}
+		#logo {
+			padding-left: 10px; 
+			padding-bottom: 50px; 
+/*			padding-right: 40px;*/  
+			margin-right: 20px;
+			margin-left: 20px;  
+			margin-top: -15px;
+/*			font-family: 'Hind', sans-serif;  */
+/*			font-size: 30px;*/  
+/*			letter-spacing: -1px;*/  
+			width: auto;
+			max-height: 5px;
+			text-shadow: 1px 1px 2px #c4c4c4;
+		}
+
+		#about {
+			position: relative;
+			top: 96px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: white;
+			padding: 15px;
+			width: 96%;
+			height: 400px;
+			z-index: 1;
+		}
+		table {
+			position: absolute;
+			width: 100%;
+			top: 15px;
+			right: 0px;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		#header {
+			font-size: 30px;
+			color: #052345;
+		}
+		td {
+			width: 50%;
+			background-color: #db3b30;
+			padding: 10px;
+		}
+		table, td, tr, th {
+			border: 1px dotted black;
+		}
+
+		#forest {
+		}
+	</style>
+</head>
+<body>
+	<div id="artsy"></div>
+
+	<nav>
+		<a id="logo" href="ifetayo.org"> <img width="120px" height="42px" src="https://www.cb14youthconference.nyc/wp-content/uploads/2020/02/0BF00CF2-B582-4E9D-9C6E-7D51FF3E30B5.png"> </a>
+		<a href="ten.html"> HOME </a>
+		<a href="aboutus.html"> ABOUT </a>
+		<a href="censusquestionmark.html"> CENSUS </a>
+		<a href="#"> PROJECTS </a>
+	</nav>
+
+	<div id="about">
+	<table>
+		<tr>
+			<th id="header" colspan="2">ABOUT THE SCHOLARS</th>
+		</tr>
+		<tr>
+			<td id="forest"> 
+				<img id="bang" src="">
+				<h3> </h3>
+			</td>
+			<td id="keimela"> keimela </td>
+		</tr>
+		<tr>
+			<td id="alana">alana</td>
+			<td id="kayla">kayla</td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
