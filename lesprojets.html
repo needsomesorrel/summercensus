@@ -7,7 +7,7 @@
 		body {
 			font-family: 'Century Gothic','Futura','Didact Gothic',sans-serif; /* will change font... */
 			position: absolute;
-			background-image: url(https://www.behindthescenesnyc.com/wp-content/uploads/2017/09/Curiosities-Top-Picks-10-Place-to-Eat-Crown-Heights-by-Shalom-Serraf-1.png); /*CHANGE!!*/
+			background-image: url(https://www.stvinc.com/sites/default/files/2017-05/Glenwood%20Houses.jpg); /*CHANGE!!*/
 			background-size: cover;
 			background-attachment: fixed;
 			height: 100%;
@@ -58,6 +58,7 @@
 			margin-top: -2px;
 			text-decoration: none;
 			transition-duration: 0.2s;
+			border-radius: 22px;
 		}
 		nav a:hover {
 			background-color: #deae2a;
@@ -65,6 +66,7 @@
 			color: #16a2c9;
 /*			text-decoration: underline;
 			text-decoration-color: #db3b30;*/
+			border-radius: 22px;
 
 		}
 		#logo {
@@ -84,7 +86,7 @@
 
 		#pojet {
 			position: relative;
-			top: 115px;
+			top: 110px;
 			z-index: 1;
 			background-color: white;
 			height: 560px;
@@ -130,6 +132,7 @@
 			width: 70%;
 			height: 440px;
 			margin: 0 auto;
+			box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
 		}
 		.cap {
 			display: none;
@@ -139,20 +142,60 @@
 		.button {
 			z-index: 1;
 			position: relative;
+/*			left: 90%;*/
+			border: none;
+			background-color: transparent;
 		}
 		#b1 {
-			position: relative;
-			left: 60px;
-			bottom: 210px;
-			width: 31px;
-			height: 30px;
+			position: absolute;
+			left: 10%;
+			bottom: 230px;
+			width: 46px;
+			height: 45px;
+			transition-duration: 0.2s;
+			border-radius: 50%;
 		}
 		#b2 {
-			position: relative;
-			left: 970px;
-			bottom: 210px;
-			width: 31px;
-			height: 30px;
+			position: absolute;
+			right: 10%;
+			bottom: 230px;
+			width: 46px;
+			height: 45px;
+			transition-duration: 0.2s;
+			border-radius: 50%;
+		}
+		#b3 {
+			position: absolute;
+			left: 0.5%;
+			bottom: 40%;
+			transition-duration: 0.5s;
+			border-radius: 10px;
+			border: 2px solid transparent;
+		}
+		#b4 {
+			position: absolute;
+			right: 0.5%;
+			bottom: 40%;
+			transition-duration: 0.5s;
+			border-radius: 10px;
+			border: 2px solid transparent;
+		}
+		#b1:hover, #b2:hover {
+			background-color: #deae2a;
+			color: white;
+			transition-duration: 0.2s;
+			border-radius: 50%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+		}
+		#b3:hover, #b4:hover {
+			background-color: #e86926;
+			transition-duration: 0.5s;
+			border-radius: 10px;
+			opacity: 70%;
+			border: 2px solid #deae2a;
+		}
+		#rotten {
+			transform: rotate(180deg);
 		}
 
 	</style>
@@ -191,8 +234,8 @@
 				<source src="test/summercensus/skit3.mov" type="video/mp4">
 	  			<source src="test/summercensus/skit3.ogg" type="video/ogg">
 			</video>
-			<button class="button" id="b1" onclick="plusDivs(-1)">&#10094;</button>
-	  		<button class="button" id="b2" onclick="plusDivs(1)">&#10095;</button>
+			<button class="button" id="b1" onclick="plusDivs(-1)"><img width="31px" height="30px" id="rotten" src="test/summercensus/arrow.png"></button>
+	  		<button class="button" id="b2" onclick="plusDivs(1)"><img width="31px" height="30px" src="test/summercensus/arrow.png"></button>
 	</div>
 	<div class="bigss" id="pojet"> 
 		<div id="bm"> What's Next? </div>
@@ -202,8 +245,9 @@
 		<div id="bm"> Census Website</div>
 		<div id="intro"> Alana Taylor</div>
 	</div>
-	<button class="button" onclick="moreDivs(-1)">&#10094;</button>
-	<button class="button" onclick="moreDivs(1)">&#10095;</button>
+	
+	<button class="button" id="b3" onclick="moreDivs(-1)"><img width="60px" height="50px" id="rotten" src="https://lh3.googleusercontent.com/proxy/guVttqoJViFg78Mlknpx8X5uKWX-pKoHktRYfAdHlb9sZXUMPncAB33d8Z_4UYN-5kXG80XfATmgs9vEf0OltthxaaiVXCJktDR7UFS_DL3SaLARjZA8mx_IWfY5IEGZ_52Sjl4Xg8tHyehVk0V1zNfxo88"></button>
+	<button class="button" id="b4" onclick="moreDivs(1)"><img width="60px" height="50px" src="https://lh3.googleusercontent.com/proxy/guVttqoJViFg78Mlknpx8X5uKWX-pKoHktRYfAdHlb9sZXUMPncAB33d8Z_4UYN-5kXG80XfATmgs9vEf0OltthxaaiVXCJktDR7UFS_DL3SaLARjZA8mx_IWfY5IEGZ_52Sjl4Xg8tHyehVk0V1zNfxo88"></button>
 </body>
 </html>
 <script type="text/javascript">
