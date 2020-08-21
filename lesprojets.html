@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>IYE Summer</title>
+	<link rel="icon" type="image/png" href="test/summercensus/favicon.ico"/>
 	<style type="text/css">
 		body {
 			font-family: 'Century Gothic','Futura','Didact Gothic',sans-serif; /* will change font... */
 			position: absolute;
-			background-image: url(https://www.behindthescenesnyc.com/wp-content/uploads/2017/09/Curiosities-Top-Picks-10-Place-to-Eat-Crown-Heights-by-Shalom-Serraf-1.png);
+			background-image: url(https://www.behindthescenesnyc.com/wp-content/uploads/2017/09/Curiosities-Top-Picks-10-Place-to-Eat-Crown-Heights-by-Shalom-Serraf-1.png); /*CHANGE!!*/
 			background-size: cover;
 			background-attachment: fixed;
 			height: 100%;
@@ -81,6 +82,79 @@
 			text-shadow: 1px 1px 2px #c4c4c4;
 		}
 
+		#pojet {
+			position: relative;
+			top: 115px;
+			z-index: 1;
+			background-color: white;
+			height: 560px;
+			width: 85%;
+			margin: 0 auto;
+			padding: 10px;
+/*			border-radius: 1%;*/
+		}
+		#bm {
+			position: relative;
+			height: 44px;
+			width: 90%;
+			margin: 0 auto;
+			background-color: #db3b30;
+			color: #deae2a;
+			text-align: center;
+			font-size: 36px;
+		}
+		#intro {
+			position: relative;
+			height: 20px;
+			width: 90%;
+			margin: 0 auto;
+			text-align: center;
+			background-color: #b32f25;
+			font-size: 16px;
+		}
+
+/*
+		#hey {
+			position: absolute;
+			z-index: 1;
+		}*/
+		.bigss {
+			display: none;
+			border-radius: 20px;
+			animation-name: whenwegon;
+		}
+		.slideshow {
+			display:none;
+			position: relative;
+			top: 10px;
+			width: 70%;
+			height: 440px;
+			margin: 0 auto;
+		}
+		.cap {
+			display: none;
+			font-size: 20px;
+			text-align: center;
+		}
+		.button {
+			z-index: 1;
+			position: relative;
+		}
+		#b1 {
+			position: relative;
+			left: 60px;
+			bottom: 210px;
+			width: 31px;
+			height: 30px;
+		}
+		#b2 {
+			position: relative;
+			left: 970px;
+			bottom: 210px;
+			width: 31px;
+			height: 30px;
+		}
+
 	</style>
 </head>
 <body>
@@ -88,11 +162,85 @@
 
 	<nav>
 		<a id="logo" href="https://ifetayo.org/census/"> <img width="120px" height="42px" src="https://www.cb14youthconference.nyc/wp-content/uploads/2020/02/0BF00CF2-B582-4E9D-9C6E-7D51FF3E30B5.png"> </a>
-		<a href="ten.html"> HOME </a>
-		<a href="censusquestionmark.html"> CENSUS </a>
+		<a href="index.html"> CENSUS </a>
 		<a href="aboutus.html"> ABOUT </a>
 		<a href="lesprojets.html"> PROJECTS </a>
 	</nav>
-	
+
+	<!-- <video id="hey" width="320" height="240" controls play>
+  		<source src="skit2.mov" type="video/mp4">
+  		<source src="skit2.ogg" type="video/ogg">
+	</video> -->
+
+	<div class="bigss" id="pojet"> 
+		<div id="bm"> 10, 10, 10! </div>
+		<div id="intro"> Ifetayo Youth Ensemble </div>
+	</div>
+	<div class="bigss" id="pojet"> 
+		<div id="bm"> Census Awareness </div>
+		<div id="intro"> Forest Holmes-Dodge and Kayla Touré </div>
+			<video class="slideshow" width="320" height="240" controls play>
+				<source src="test/summercensus/skit1.mov" type="video/mp4">
+	  			<source src="test/summercensus/skit1.ogg" type="video/ogg">
+			</video>
+			<video class="slideshow" width="320" height="240" controls play>
+				<source src="test/summercensus/skit2.mov" type="video/mp4">
+	  			<source src="test/summercensus/skit2.ogg" type="video/ogg">
+			</video>
+			<video class="slideshow" width="320" height="240" controls play>
+				<source src="test/summercensus/skit3.mov" type="video/mp4">
+	  			<source src="test/summercensus/skit3.ogg" type="video/ogg">
+			</video>
+			<button class="button" id="b1" onclick="plusDivs(-1)">&#10094;</button>
+	  		<button class="button" id="b2" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+	<div class="bigss" id="pojet"> 
+		<div id="bm"> What's Next? </div>
+		<div id="intro"> Keimela Leitch </div>
+	</div>
+	<div class="bigss" id="pojet"> 
+		<div id="bm"> Census Website</div>
+		<div id="intro"> Alana Taylor</div>
+	</div>
+	<button class="button" onclick="moreDivs(-1)">&#10094;</button>
+	<button class="button" onclick="moreDivs(1)">&#10095;</button>
 </body>
 </html>
+<script type="text/javascript">
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slideshow");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+	
+	var bigIndex = 1;
+shoDivs(bigIndex);
+
+function moreDivs(n) {
+  shoDivs(bigIndex += n);
+}
+
+function shoDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("bigss");
+  if (n > x.length) {bigIndex = 1}
+  if (n < 1) {bigIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[bigIndex-1].style.display = "block";  
+}
+
+</script>
