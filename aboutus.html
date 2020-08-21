@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>IYE Summer</title>
+	<link rel="icon" type="image/png" href="test/summercensus/favicon.ico"/>
 	<style type="text/css">
 		body {
 			font-family: 'Century Gothic','Futura','Didact Gothic',sans-serif; /* will change font... */
@@ -87,10 +88,11 @@
 			margin-left: auto;
 			margin-right: auto;
 			background-color: white;
-			padding: 15px;
+			padding: 12px;
 			width: 96%;
-			height: 400px;
+			height: 2220px;
 			z-index: 1;
+			border: 5px double black;
 		}
 		table {
 			position: absolute;
@@ -101,10 +103,60 @@
 			padding-right: 5px;
 		}
 		#header {
-			font-size: 30px;
+			font-size: 35px;
 			color: #052345;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: overline underline;
 		}
-		td {
+		.info {
+			height: 450px;
+			width: 65%;
+			background-color: #db3b30;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			transition-duration: 0.2s;
+			padding: 10px;
+			border: 5px solid #b32f25;
+			border-radius: 1%;
+		}
+		.info:hover {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+			transition-duration: 0.2s;
+		}
+		#bang {
+			position: relative;
+			top: 45px;
+			left: 15px;
+			width: 270px;
+			height: 340px;
+			border: 5px solid #deae2a;
+			border-radius: 1%;
+		}
+		#name {
+			position: relative;
+			bottom: 280px;
+			left: 310px;
+			font-size: 28px;
+		}
+		#bio,#biok {
+			position: relative;
+			bottom: 300px;
+			left: 310px;
+			font-size: 18px;
+			font-weight: normal;
+			max-width: 60%;
+			overflow-wrap: break-word;
+			overflow: scroll;
+		}
+		#bio {
+			line-height: 1.8;
+		}
+		#biok {
+			font-size: 17px;
+		}
+		/*td {
 			width: 50%;
 			background-color: #db3b30;
 			padding: 10px;
@@ -113,7 +165,46 @@
 			border: 1px dotted black;
 		}
 
+		#bang {
+			width: 184px;
+			height: 250px;
+		}
+		#name {
+			position: relative;
+			left: 200px;
+			top: -275px;
+
+		}
+		#bio {
+			position: relative;
+			top: -290px;
+			left: 200px;
+			font-weight: normal;
+		}*/
 		#forest {
+			position: relative;
+		}
+		#keimela {
+			position: relative;
+			top: 60px;
+		}
+		#alana {
+			position: relative;
+			top: 120px;
+		}
+		#kayla {
+			position: relative;
+			top: 180px;
+		}
+
+		#holdpls {
+			position: absolute;
+			top: 2250px;
+			width: 100%;
+			height: 25px;
+			background-color: rgba(31,82,163,1);
+			z-index: 0;
+			margin: 0 auto;
 		}
 	</style>
 </head>
@@ -121,30 +212,61 @@
 	<div id="artsy"></div>
 
 	<nav>
-		<a id="logo" href="ifetayo.org"> <img width="120px" height="42px" src="https://www.cb14youthconference.nyc/wp-content/uploads/2020/02/0BF00CF2-B582-4E9D-9C6E-7D51FF3E30B5.png"> </a>
-		<a href="ten.html"> HOME </a>
+		<a id="logo" href="https://ifetayo.org/census/"> <img width="120px" height="42px" src="https://www.cb14youthconference.nyc/wp-content/uploads/2020/02/0BF00CF2-B582-4E9D-9C6E-7D51FF3E30B5.png"> </a>
+		<a href="index.html"> CENSUS </a>
 		<a href="aboutus.html"> ABOUT </a>
-		<a href="censusquestionmark.html"> CENSUS </a>
-		<a href="#"> PROJECTS </a>
+		<a href="lesprojets.html"> PROJECTS </a>
 	</nav>
 
 	<div id="about">
-	<table>
+	<h1 id="header"> ABOUT THE SCHOLARS </h1>
+		<div class="info" id="forest"> 
+			<img id="bang" src="test/summercensus/forestpic.jpg"> </img>
+			<h2 id="name"> Forest Holmes-Dodge </h2>
+			<p id="bio"> I'm Forest Holmes-Dodge and I'm 15 years old. This is my first year at IYE, majoring in music. I am advocating for the census by creating videos that portray issues in your neighborhoods that can be resolved by filling out the census. </p>
+		</div>
+		<div class="info" id="keimela"> 
+			<img id="bang" src="test/summercensus/keimelapic.jpg"> </img>
+			<h2 id="name"> Keimela Leitch </h2>
+			<p id="bio"> My name is Keimela and I'm 15 years old. This is my second year as a member of IYE, working as an acting major. My project is about encouraging individuals by providing the necessary steps needed to provide their communities with the support they need. </p>
+		</div>
+		<div class="info" id="alana"> 
+			<img id="bang" src="test/summercensus/alanapic1.jpg"> <!-- JUST A HOLDER IMAGE JUST A HOLDERRRR --> </img>
+			<h2 id="name"> Alana Taylor </h2>
+			<p id="bio"> I'm Alana Taylor and I'm 15 years old. This is my second year (officially) in the Ifetayo Youth Ensemble, focusing mainly on dance and movement as my major. My project is the very website that you are on right now! It started as a place to display extra information about the census and became a place that holds all of the census work that we've done over the summer. </p>
+		</div>
+		<div class="info" id="kayla"> 
+			<img id="bang" src="test/summercensus/kaylapic.jpg"> </img>
+			<h2 id="name"> Kayla Touré </h2>
+			<p id="biok"> Kayla Touré is an second-generation West African, who is an adventurous, vivacious, and determined fifteen year old. She has starred in several productions including “Annie”, “The Little Mermaid”, “The Lion King”, “A Midsummer Night's Dream”, “Cabaret”, and others. Kayla has studied and graduated from Mark Twain For The Gifted And Talented School as a drama major. Additionally, she has had a wonderful time combining her love of acting and social justice work in her project, creating short skits to inform the public on the census and its importance. In conclusion, she thanks Ifetayo Cultural Arts Academy for this amazing opportunity. </p>
+		</div>
+		<div id="holdpls"> </div>
+		<!-- i made a change! -->
+	<!-- <table>
 		<tr>
 			<th id="header" colspan="2">ABOUT THE SCHOLARS</th>
 		</tr>
 		<tr>
-			<td id="forest"> 
-				<img id="bang" src="">
-				<h3> </h3>
+			<td> 
+				<div id="forest">
+				<img id="bang" src="forestpic.jpg">
+					<h2 id="name"> Forest Holmes-Dodge </h2>
+					<h3 id="bio"> forest bio </h3>
+				</div>
 			</td>
-			<td id="keimela"> keimela </td>
+			<td> 
+				<div id="keimela">
+					<img id="bang" src="keimelapic.jpg">
+					<h2 id="name"> Keimela Leitch </h2>
+					<h3 id="bio"> keimela bio </h3>
+				</div>
+			 </td>
 		</tr>
 		<tr>
 			<td id="alana">alana</td>
 			<td id="kayla">kayla</td>
 		</tr>
-	</table>
+	</table> -->
 	</div>
 </body>
 </html>
