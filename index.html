@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IYE Summer</title>
+	<link rel="icon" type="image/png" href="test/summercensus/favicon.ico"/>
+	<style type="text/css">
+		body {
+			font-family: 'Century Gothic','Futura','Didact Gothic',sans-serif; /* will change font... */
+			position: absolute;
+			background-image: url(https://www.behindthescenesnyc.com/wp-content/uploads/2017/09/Curiosities-Top-Picks-10-Place-to-Eat-Crown-Heights-by-Shalom-Serraf-1.png);
+			background-size: cover;
+			background-attachment: fixed;
+			height: 100%;
+			width: 100%;
+			z-index: 0;
+			max-width: 100%;
+    		overflow-x: hidden;
+    		margin: 0 auto;
+	    }
+
+ 		#artsy {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			/*background-color: rgba(31,82,163,0.8);*/
+			background-image: linear-gradient(180deg, rgba(31,82,163,0.7), rgba(31,82,163,1));
+			background-size: cover;
+			z-index: 1;
+		}
+
+		nav {
+			position: fixed;
+			right: 0px;
+			top: 0px;
+			width: 100%;
+			height: 32px;
+			background-color: #e86926;
+			overflow: hidden;
+			padding-right: -30px;
+			padding-top: 25px;
+			padding-bottom: 25px;
+			z-index: 2;
+/*			box-shadow: 1px 10px 12px #1f52a3*/
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		nav a {
+			display: block;
+			float: left;
+			width: 95px;
+			text-align: center;
+			font-size: 17px;    
+			color: white;
+/*			border: 1px solid #000;*/ 
+			padding-top: 10px;    
+			padding-right: 10px;    
+			padding-bottom: 10px;    
+			padding-left: 10px;
+			margin-top: -2px;
+			text-decoration: none;
+			transition-duration: 0.2s;
+		}
+		nav a:hover {
+			background-color: #deae2a;
+			transition-duration: 0.2s;
+			color: #16a2c9;
+/*			text-decoration: underline;
+			text-decoration-color: #db3b30;*/
+
+		}
+		#logo {
+			padding-left: 10px; 
+			padding-bottom: 50px; 
+/*			padding-right: 40px;*/  
+			margin-right: 20px;
+			margin-left: 20px;  
+			margin-top: -15px;
+/*			font-family: 'Hind', sans-serif;  */
+/*			font-size: 30px;*/  
+/*			letter-spacing: -1px;*/  
+			width: auto;
+			max-height: 5px;
+			text-shadow: 1px 1px 2px #c4c4c4;
+		}
+
+		#what {
+			position: absolute;
+			top: 120px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#who {
+			position: absolute;
+			top: 500px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#why {
+			position: absolute;
+			top: 880px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#we {
+			position: absolute;
+			top: 1260px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#how {
+			position: absolute;
+			top: 1640px;
+			z-index: 2;
+			width: 95%;
+			height: 300px;
+			margin: 0 auto;
+			background-color: white;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			padding: 15px;
+			z-index: 1;
+		}
+
+		#question {
+			color: #1375e6;
+			font-weight: bold;
+		}
+
+		#info {
+			color: #03162b;
+			font-size: 18px;
+			font-weight: normal;
+			position: absolute;
+			top: 66px;
+			overflow: scroll;
+			max-width: 70%;
+			line-height: 1.85;
+		}
+		#rush {
+			color: #db3b30;
+			font-size: 20px;
+			max-width: 70%;
+			text-align: center;
+			position: absolute;
+			top: 240px;
+		}
+		#rushi {
+			text-decoration: none;
+			color: #deae2a;
+			transition-duration: 0.2s;
+		}
+		#rushi:hover {
+			color: #16a2c9;
+			transition-duration: 0.2s;
+		}
+
+		#paperz, #skool, #boro, #fourmi, #together {
+			height: 330px;
+			width: 330px;
+			overflow: hidden;
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+		}
+		#holdpls {
+			position: absolute;
+			top: 1970px;
+			width: 100%;
+			height: 40px;
+			background-color: rgba(31,82,163,1);
+			z-index: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="artsy"></div>
+
+	<nav>
+		<a id="logo" href="https://ifetayo.org/census/"> <img width="120px" height="42px" src="https://www.cb14youthconference.nyc/wp-content/uploads/2020/02/0BF00CF2-B582-4E9D-9C6E-7D51FF3E30B5.png"> </a>
+		<a href="index.html"> CENSUS </a>
+		<a href="aboutus.html"> ABOUT </a>
+		<a href="lesprojets.html"> PROJECTS </a>
+	</nav>
+
+	<div id="what"> 
+		<h1 id="question"> WHAT IS THE CENSUS?! </h1>
+		<img id="paperz" src="https://pyxis.nymag.com/v1/imgs/5a9/26d/7a2991c1e2b3c20f6e8ce8041a873cbb85-census.rsquare.w1200.jpg">
+		<h3 id="info"> In a short answer, the census is a survey sent out nationwide every ten years to count the amount of people in the United States efficiently. In a more extensive answer, the census is so much more than a survey. It not only counts the amount of people in the United States as a whole, but also serves as the way for the government to know how many people live in each state, each county, each city, each borough (in the case of New York City) and each household, as well as charting the demographic for each of these divisions. It only has ten questions and generally takes 10 minutes or less to fill out. </h3>
+	</div>
+		<div id="who"> 
+		<h1 id="question"> WHY DOES IT MATTER? </h1>
+		<img id="boro" src="https://media.timeout.com/images/101830363/image.jpg">
+		<h3 id="info"> The census is used to count people. Based on the amount of people that live in a certain area, a few things happen. First off, the amount of representatives that a state has in the House depends on the number of people in the state. If there are more people in the state, then there are more elected officials, most likely from more varied places. Another huge part of knowing the amount of people in an area is the amount of money it receives. The government gives funds to local governments for certain facilities based on how many people there are in the state. If everyone doesn't respond to census, the area gets critically underfunded, as has been the case for places like Brooklyn and the Bronx.  </h3>
+	</div>
+
+	<div id="why"> 
+		<h1 id="question"> WHAT DOES IT FUND? </h1>
+		<img id="skool" src="https://cdn.brownstoner.com/wp-content/uploads/2015/03/ps-321-school-park-slope-031615.jpg">
+		<h3 id="info"> it's for a GOOD REASON </h3>
+	</div>
+
+	<div id="we"> 
+		<h1 id="question"> WHAT HAS IYE BEEN DOING? </h1>
+		<img id="together" src="https://secureservercdn.net/198.71.233.44/dd1.f20.myftpupload.com/wp-content/uploads/2019/09/OverProject-300x300.png">
+		<h3 id="info"> we do that shit </h3>
+	</div>
+
+	<div id="how"> 
+		<h1 id="question"> SO... WHAT CAN I DO? </h1>
+		<img id="fourmi" src="https://www1.nyc.gov/assets/home/images/programs/NYCcensus.jpg">
+		<h3 id="info"> The census is available to be filled out by mail, by phone, in person via census taker, and, for the first time ever, online. In order to make sure everyone in the neighborhood and the borough and the city is counted and properly accounted for, fill out the census! It is especially important that everyone is accounted for during a year like this, where many important decisions regarding leadership and redirected funds are being considered. </h3>
+		<h3 id="rush"> THE CENSUS ENDS ONE MONTH EARLY ON SEPTEMBER 30 THIS YEAR! IF YOU HAVEN'T FILLED IT OUT YET, FIND OUT MORE 
+		<a id="rushi" href="https://2020census.gov/en.html"> HERE</a>. </h3>
+	</div>
+	<div id="holdpls"> <div>
+</body>
+</html>
