@@ -91,7 +91,7 @@
 			background-color: white;
 			padding: 12px;
 			width: 96%;
-			height: 2220px;
+			height: 2580px;
 			z-index: 1;
 			border: 5px double black;
 		}
@@ -121,10 +121,24 @@
 			padding: 10px;
 			border: 5px solid #b32f25;
 			border-radius: 1%;
+			z-index: 2;
 		}
 		.info:hover {
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
 			transition-duration: 0.2s;
+		}
+		#iye {
+			position: relative;
+			width: 88%;
+			height: 275px;
+		}
+		#quickdiv {
+			position: relative;
+			width: 100%;
+			background-color: white;
+			color: black;
+			height:50px;
+			z-index: 1;
 		}
 		#bang {
 			position: relative;
@@ -156,6 +170,11 @@
 		}
 		#biok {
 			font-size: 17px;
+		}
+		#sum {
+			position: relative;
+			top: 5px;
+			text-align: center;
 		}
 		/*td {
 			width: 50%;
@@ -200,7 +219,7 @@
 
 		#holdpls {
 			position: absolute;
-			top: 2250px;
+			top: 2620px;
 			width: 100%;
 			height: 25px;
 			background-color: rgba(31,82,163,1);
@@ -221,6 +240,13 @@
 
 	<div id="about">
 	<h1 id="header"> ABOUT THE SCHOLARS </h1>
+		<div class="info" id="iye"> 
+			<h2 id="stuf"> </h2>
+			<p id="censtuf"> </p>
+		</div>
+		<div id="quickdiv"> 
+			<p id="sum"> ----------------- </p>
+		</div>
 		<div class="info" id="forest"> 
 			<img id="bang" src="forestpic.jpg"> </img>
 			<h2 id="name"> Forest Holmes-Dodge </h2>
