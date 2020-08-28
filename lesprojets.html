@@ -114,6 +114,14 @@
 			background-color: #b32f25;
 			font-size: 16px;
 		}
+		#teeeeen {
+			position: relative;
+			top: 10px;
+			width: 70%;
+			height: 440px;
+			margin: 0 auto;
+			box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+		}
 
 /*
 		#hey {
@@ -127,6 +135,23 @@
 		}
 		.slideshow {
 			display:none;
+			position: relative;
+			top: 10px;
+			width: 70%;
+			height: 440px;
+			margin: 0 auto;
+			box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+		}
+		.slideshowtwo {
+			display:none;
+			position: relative;
+			top: 10px;
+			width: 70%;
+			height: 440px;
+			margin: 0 auto;
+			box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+		}
+		.ten {
 			position: relative;
 			top: 10px;
 			width: 70%;
@@ -262,6 +287,7 @@
 	<div class="bigss" id="pojet"> 
 		<div id="bm"> 10, 10, 10! </div>
 		<div id="intro"> Ifetayo Youth Ensemble </div>
+			<iframe id="teeeeen" width="560" height="315" src="https://www.youtube.com/embed/aZXvzORK-r0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<div class="bigss" id="pojet"> 
 		<div id="bm"> Census Awareness </div>
@@ -284,6 +310,21 @@
 	<div class="bigss" id="pojet"> 
 		<div id="bm"> What's Next? </div>
 		<div id="intro"> Keimela Leitch </div>
+			<video class="slideshowtwo" width="320" height="240" controls play>
+				<!-- <source src="whatsnextep1.mov" type="video/mp4">
+	  			<source src="whatsnextep1.ogg" type="video/ogg"> -->
+			</video>
+			<video class="slideshowtwo" width="320" height="240" controls play>
+				<!-- <source src="whatsnextep2.mov" type="video/mp4">
+	  			<source src="whatsnextep2.ogg" type="video/ogg"> -->
+			</video>
+			<video class="slideshowtwo" width="320" height="240" controls play>
+				<!-- <source src="whatsnextep3.mov" type="video/mp4">
+	  			<source src="whatsnextep3.ogg" type="video/ogg"> -->
+			</video>
+
+			<button class="button" id="b1" onclick="plussDivs(-1)"><img width="31px" height="30px" id="rotten" src="arrow.png"></button>
+	  		<button class="button" id="b2" onclick="plussDivs(1)"><img width="31px" height="30px" src="arrow.png"></button>
 	</div>
 	<div class="bigss" id="pojet"> 
 		<div id="bm"> Census Website</div>
@@ -296,8 +337,8 @@
 			<p id="c"> My scrapped idea of a homepage (with holder images). </p>
 	</div>
 	
-	<button class="button" id="b3" onclick="moreDivs(-1)"><img width="60px" height="50px" id="rotten" src="https://lh3.googleusercontent.com/proxy/guVttqoJViFg78Mlknpx8X5uKWX-pKoHktRYfAdHlb9sZXUMPncAB33d8Z_4UYN-5kXG80XfATmgs9vEf0OltthxaaiVXCJktDR7UFS_DL3SaLARjZA8mx_IWfY5IEGZ_52Sjl4Xg8tHyehVk0V1zNfxo88"></button>
-	<button class="button" id="b4" onclick="moreDivs(1)"><img width="60px" height="50px" src="https://lh3.googleusercontent.com/proxy/guVttqoJViFg78Mlknpx8X5uKWX-pKoHktRYfAdHlb9sZXUMPncAB33d8Z_4UYN-5kXG80XfATmgs9vEf0OltthxaaiVXCJktDR7UFS_DL3SaLARjZA8mx_IWfY5IEGZ_52Sjl4Xg8tHyehVk0V1zNfxo88"></button>
+	<button class="button" id="b3" onclick="moreDivs(-1)"><img width="60px" height="50px" id="rotten" src="bigarrow.png"></button>
+	<button class="button" id="b4" onclick="moreDivs(1)"><img width="60px" height="50px" src="bigarrow.png"></button>
 </body>
 </html>
 <script type="text/javascript">
@@ -317,6 +358,24 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   x[slideIndex-1].style.display = "block";  
+}
+	
+	var slideeIndex = 1;
+showwDivs(slideeIndex);
+
+function plussDivs(n) {
+  showwDivs(slideeIndex += n);
+}
+
+function showwDivs(n) {
+  var i;
+  var a = document.getElementsByClassName("slideshowtwo");
+  if (n > a.length) {slideeIndex = 1}
+  if (n < 1) {slideeIndex = a.length}
+  for (i = 0; i < a.length; i++) {
+    a[i].style.display = "none";  
+  }
+  a[slideeIndex-1].style.display = "block";  
 }
 	
 	var bigIndex = 1;
